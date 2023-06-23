@@ -1,27 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de salario liquido</title>
     <link rel="stylesheet" href="style.css">
-    <script defer src="scripts.css"></script>
+    <script defer src="scripts.js"></script>
 </head>
 <body>
     <main>
-        <h1>Cálculo de salário líquido</h1>
-        <form>
+        
+        <form class="calculadora">
+            <h1>Cálculo de salário líquido</h1>
+            <p class="informativo">Este cálculo demostra como obter um valor de salário líquido a partir do salário bruto e dos principais descontos do salário (INSS e IRRF)</p>
+            <p>Salário bruto</p>
             <input type="text">
+            <p>Descontos</p>
             <input type="text">
+            <p>Número de dependentes</p>
             <input type="text">
-            <div>
-                <button>Limpar</button>
-                <button>Calcular</button>
+            <div class="botoes">
+                <button class="btn_limpar">Limpar</button>
+                <button class="btn_calcular">Calcular</button>
             </div>
 
             <h2>Resultado</h2>
 
-            <table>
+            <table class="resultado">
                 <tr>
                     <th>Eventos</th>
                     <th>Alíquota</th>
