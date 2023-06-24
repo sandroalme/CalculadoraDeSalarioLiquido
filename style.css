@@ -65,6 +65,14 @@ h1 {
     font-weight: bold;
 }
 
+.resultado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+    max-width: 400px;
+}
+
 .btn_calcular:hover {
     background-color: blue;
     color: white;
@@ -75,6 +83,10 @@ h1 {
         flex-direction: column;
     }
     .calculadora {
+        margin: 20px;
+    }
+
+    .resultado {
         margin: 20px;
     }
 }
