@@ -82,6 +82,10 @@ h1 {
     main {
         flex-direction: column;
     }
+
+    h1 {
+        text-align: center;
+    }
     .calculadora {
         margin: 20px;
     }
