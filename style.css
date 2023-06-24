@@ -71,6 +71,9 @@ h1 {
 }
 
 @media (max-width: 775px) {
+    main {
+        flex-direction: column;
+    }
     .calculadora {
         margin: 10px;
     }
