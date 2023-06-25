@@ -71,11 +71,15 @@ h1 {
     color: white;
 }
 
+h2 {
+    margin: 100px 0px 5px 21px;
+}
+
 table {
     display: flex;
     justify-content: center;
     border-collapse: collapse;
-    margin-bottom: 150px;
+    margin: 00px 20px 150px 20px;
     border: 1px solid rgb(189, 191, 198);
     border-radius: 15px;
 }
