@@ -71,34 +71,42 @@ h1 {
     color: white;
 }
 
-.resultado {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-    max-width: 400px;
-}
-
-h2 {
-    margin-bottom: 20px;
-}
-
 table {
     display: flex;
     justify-content: center;
     border-collapse: collapse;
     margin-bottom: 150px;
+    border: 1px solid rgb(189, 191, 198);
     border-radius: 15px;
-    width: 100%;
 }
 
-td, th {
-    border: 1px solid rgb(189, 191, 198);
+td {
     padding: 10px;
+}
+
+.cima_esquerda {
+    border-radius: 15px 0px 0px 0px;
+}
+
+.cima_direita {
+    border-radius: 0px 15px 0px 0px;
+}
+
+.baixo_esquerda {
+    border-radius: 0px 0px 0px 15px;
+}
+
+.baixo_direita {
+    border-radius: 0px 0px 15px 0px;
+}
+
+.tab_bord {
+    border: 1px solid rgb(189, 191, 198);
 }
 
 th {
     background-color: rgb(210, 216, 230);
+    padding: 15px 10px;
 }
 
 @media (max-width: 775px) {
@@ -110,10 +118,6 @@ th {
         text-align: center;
     }
     .calculadora {
-        margin: 20px;
-    }
-
-    .resultado {
         margin: 20px;
     }
 }
