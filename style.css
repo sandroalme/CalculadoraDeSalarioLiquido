@@ -72,42 +72,26 @@ h1 {
     color: white;
 }
 
+.resultado {
+    overflow-x: auto;
+    margin: 00px 20px 150px 20px;
+}
+
 h2 {
     margin: 150px 0px 5px 21px;
 }
 
 table {
-    display: flex;
-    justify-content: center;
     border-collapse: collapse;
-    margin: 00px 20px 150px 20px;
-    border: 1px solid rgb(189, 191, 198);
-    border-radius: 15px;
-    max-width: max-content;
+    max-width: 400px;
+}
+
+th, td {
+    border: 1px solid rgb(195, 199, 203);
 }
 
 td {
     padding: 10px;
-}
-
-.cima_esquerda {
-    border-radius: 15px 0px 0px 0px;
-}
-
-.cima_direita {
-    border-radius: 0px 15px 0px 0px;
-}
-
-.baixo_esquerda {
-    border-radius: 0px 0px 0px 15px;
-}
-
-.baixo_direita {
-    border-radius: 0px 0px 15px 0px;
-}
-
-.tab_bord {
-    border: 1px solid rgb(189, 191, 198);
 }
 
 th {
