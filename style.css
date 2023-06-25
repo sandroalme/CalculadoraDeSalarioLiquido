@@ -83,6 +83,7 @@ table {
     margin: 00px 20px 150px 20px;
     border: 1px solid rgb(189, 191, 198);
     border-radius: 15px;
+    max-width: max-content;
 }
 
 td {
