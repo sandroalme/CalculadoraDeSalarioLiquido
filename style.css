@@ -126,4 +126,8 @@ th {
     .calculadora {
         margin: 20px;
     }
+
+    h2 {
+        margin: 0px 0px 5px 21px;
+    }
 }
