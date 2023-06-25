@@ -73,12 +73,8 @@ h1 {
 }
 
 .resultado {
-    overflow-x: auto;
-    margin: 00px 20px 150px 20px;
-}
-
-h2 {
-    margin: 150px 0px 5px 21px;
+    margin: 150px 20px 150px 20px;
+    max-width: 400px;
 }
 
 table {
@@ -87,7 +83,7 @@ table {
 }
 
 th, td {
-    border: 1px solid rgb(195, 199, 203);
+    border: 1px solid rgb(188, 191, 199);
 }
 
 td {
@@ -111,7 +107,7 @@ th {
         margin: 20px;
     }
 
-    h2 {
-        margin: 0px 0px 5px 21px;
+    .resultado {
+        margin: 0px 20px 150px 20px;
     }
 }
