@@ -85,7 +85,6 @@ table {
 }
 
 th, td {
-    font-size: small;
     border: 1px solid rgb(188, 191, 199);
 }
 
@@ -112,5 +111,9 @@ th {
 
     .resultado {
         margin: 0px 20px 150px 20px;
+    }
+
+    th, td {
+        font-size: small;
     }
 }
