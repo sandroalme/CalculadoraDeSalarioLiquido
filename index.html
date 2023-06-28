@@ -12,15 +12,13 @@
         
         <form class="calculadora">
             <h1>Cálculo de salário líquido</h1>
-            <p class="informativo">Este cálculo demostra como obter um valor de salário líquido
-                 a partir do salário bruto e dos principais descontos
-                  do salário. Aliquotas (INSS e IRRF) referentes ao ano de 2023.</p>
-            <p>Salário bruto</p>
-            <input type="text" class="salario_bruto">
-            <p>Descontos</p>
-            <input type="text" class="descontos">
-            <p>Número de dependentes</p>
-            <input type="text" class="dependentes">
+            <p class="informativo">Este cálculo demostra como obter um valor de salário líquido a partir do salário bruto e dos principais descontos do salário. Aliquotas (INSS e IRRF) referentes ao ano de 2023.</p>
+            <label for="salario-bruto">Salário Bruto:</label>
+            <input type="text" class="salario_bruto" id="salario-bruto">
+            <label for="demais-descontos">Demais Descontos:</label>
+            <input type="text" class="descontos" id="demais-descontos">
+            <label for="numero-dependentes">Número de Dependentes:</label>
+            <input type="text" class="dependentes" id="numero-dependentes">
             <div class="botoes">
                 <button class="btn_limpar">Limpar</button>
                 <button class="btn_calcular">Calcular</button>
@@ -54,15 +52,15 @@
                     </tr>
                     <tr>
                         <td>INSS</td>
-                        <td class="al_inss">-</td>
+                        <td id="aliquota-inss">-</td>
                         <td>-</td>
-                        <td class="inss">-</td>
+                        <td id="valor-inss">-</td>
                     </tr>
                     <tr>
                         <td>IRRF</td>
+                        <td id="aliquota-irrf">-</td>
                         <td>-</td>
-                        <td>-</td>
-                        <td class="irrf">-</td>
+                        <td id="valor-irrf">-</td>
                     </tr>
                     <tr>
                         <td colspan="2">Totais</td>
@@ -73,7 +71,7 @@
                 <tfoot>
                     <tr>
                         <td colspan="2">Valor salário líquido</td>
-                        <td colspan="2" class="salario_liquido">-</td>
+                        <td colspan="2" id="valor-salario-liquido">-</td>
                     </tr>
                 </tfoot>
             </table>
