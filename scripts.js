@@ -29,7 +29,7 @@ function calcularSalarioLiquido() {
 
   inssValor = salarioBruto * (inssAliquota / 100);
 
-  // Cálculo do IRRF
+  // Cálculo do IRRF bb
   salarioBase = salarioBruto - inssValor;
 
   console.log(salarioBase);
