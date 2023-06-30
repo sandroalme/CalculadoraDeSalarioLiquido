@@ -29,12 +29,16 @@ function calcularSalarioLiquido() {
 
   inssValor = salarioBruto * (inssAliquota / 100);
 
-  // Cálculo do IRRF bb
+  // Cálculo do IRRF
   salarioBase = salarioBruto - inssValor;
+
+  if (numeroDependentes > 0) {
+    salarioBase = salarioBase - (numeroDependentes * 189.59)
+  }
 
   console.log(salarioBase);
 
-  if (salarioBase <= 1903.98) {
+  if (salarioBase <= 2112.00) {
     irrfAliquota = 0;
   } else if (salarioBase <= 2826.65) {
     irrfAliquota = 7.5;
@@ -46,9 +50,13 @@ function calcularSalarioLiquido() {
     irrfAliquota = 27.5;
   }
 
-  irrfValor = (salarioBase * irrfAliquota / 100) - (numeroDependentes * 189.59);
+  irrfValor = (salarioBase * irrfAliquota / 100);
 
-  salarioLiquido = salarioBruto - inssValor - irrfValor - demaisDescontos;
+  salarioLiquido = salarioBruto - inssValor - irrfValor;
+
+  if (demaisDescontos > 0) {
+    salarioLiquido = salarioLiquido - demaisDescontos;
+  }
 
   document.getElementById("bruto").innerText = "R$ " + salarioBruto.toFixed(2);
   document.getElementById("aliquota-inss").innerText = inssAliquota + "%";
