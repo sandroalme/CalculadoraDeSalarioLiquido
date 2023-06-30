@@ -59,6 +59,7 @@ function calcularSalarioLiquido() {
   }
 
   document.getElementById("bruto").innerText = "R$ " + salarioBruto.toFixed(2);
+  //document.getElementById("outros").innerText = "R$ " + demaisDescontos.toFixed(2);
   document.getElementById("aliquota-inss").innerText = inssAliquota + "%";
   document.getElementById("valor-inss").innerText = "R$ " + inssValor.toFixed(2);
   document.getElementById("aliquota-irrf").innerText = irrfAliquota + "%";
@@ -69,6 +70,10 @@ function calcularSalarioLiquido() {
   if (inssValor >= 876.95) {
     document.getElementById("aliquota-inss").innerText = "TETO";
     document.getElementById("valor-inss").innerText = "R$ 876.95";
+  }
+
+  if (document.getElementById("aliquota-inss").innerText = "TETO") {
+    inssValor = 876.95;
   }
 
   limparInputs();
