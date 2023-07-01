@@ -83,12 +83,26 @@ function calcularSalarioLiquido() {
   }
 
   limparInputs();
+  MostrarResultado();
+}
+
+function MostrarResultado() {
+  const resultado = document.querySelector('.resultado');
+  resultado.style.display = "flex";
+  resultado.scrollIntoView({ behavior: 'smooth'})
+}
+
+function ocutarResultado() {
+  const resultado = document.querySelector('.resultado');
+  resultado.style.display = "none";
 }
 
 function limparInputs() {
   document.querySelector('.salario_bruto').value = "";
   document.querySelector('.descontos').value = "";
-  document.querySelector('.dependentes').value = ""
+  document.querySelector('.dependentes').value = "";
+
+  ocutarResultado();
 }
 
 calcular.addEventListener('click', (e) => {
