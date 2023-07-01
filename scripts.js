@@ -58,23 +58,22 @@ function calcularSalarioLiquido() {
     salarioLiquido = salarioLiquido - demaisDescontos;
   }
 
+  console.log(demaisDescontos);
+
   document.getElementById("bruto").innerText = "R$ " + salarioBruto.toFixed(2);
-  //document.getElementById("outros").innerText = "R$ " + demaisDescontos.toFixed(2);
+  document.getElementById("outros").innerText = "R$ " + demaisDescontos.toFixed(2);
   document.getElementById("aliquota-inss").innerText = inssAliquota + "%";
   document.getElementById("valor-inss").innerText = "R$ " + inssValor.toFixed(2);
   document.getElementById("aliquota-irrf").innerText = irrfAliquota + "%";
   document.getElementById("valor-irrf").innerText = "R$ " + irrfValor.toFixed(2);
   document.getElementById("total").innerText = "R$ " + salarioBruto.toFixed(2);
+  document.getElementById("total-descontos").innerText = "R$ " + (demaisDescontos + inssValor + irrfValor).toFixed(2);
   document.getElementById("valor-salario-liquido").innerText = "R$ " + salarioLiquido.toFixed(2);
 
-  if (inssValor >= 876.95) {
+  /*if (inssValor >= 876.95) {
     document.getElementById("aliquota-inss").innerText = "TETO";
     document.getElementById("valor-inss").innerText = "R$ 876.95";
-  }
-
-  if (document.getElementById("aliquota-inss").innerText = "TETO") {
-    inssValor = 876.95;
-  }
+  }*/
 
   limparInputs();
 }
