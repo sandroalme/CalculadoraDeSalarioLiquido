@@ -98,6 +98,10 @@ th {
     padding: 15px 10px;
 }
 
+.liquido {
+    font-weight: bold;
+}
+
 @media (max-width: 775px) {
     main {
         flex-direction: column;
@@ -106,6 +110,11 @@ th {
     h1 {
         text-align: center;
     }
+
+    input {
+        font-size: 1em;
+    }
+
     .calculadora {
         margin: 20px;
     }

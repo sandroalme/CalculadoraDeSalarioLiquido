@@ -1,5 +1,12 @@
 const limpar = document.querySelector('.btn_limpar');
 const calcular = document.querySelector('.btn_calcular');
+const salarioBruto = document.getElementById("salario-bruto");
+const descontos = document.getElementById("demais-descontos");
+const dependentes = document.getElementById("numero-dependentes");
+
+salarioBruto.addEventListener("input", function() {this.value = this.value.replace(/[^0-9]/g, ""); });
+descontos.addEventListener("input", function() {this.value = this.value.replace(/[^0-9]/g, "");});
+dependentes.addEventListener("input", function() {this.value = this.value.replace(/[^0-9]/g, "");});
 
 function calcularSalarioLiquido() {
   let salarioBruto = parseFloat(document.getElementById("salario-bruto").value);
