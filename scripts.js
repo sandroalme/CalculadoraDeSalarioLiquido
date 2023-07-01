@@ -21,13 +21,17 @@ function calcularSalarioLiquido() {
     inssAliquota = 9;
   } else if (salarioBruto <= 3856.94) {
     inssAliquota = 12;
-  } else if (salarioBruto <= 7507.49) {
+  } else if (salarioBruto <= 6263.90) {
     inssAliquota = 14;
   } else {
     inssAliquota = 14;
   }
 
   inssValor = salarioBruto * (inssAliquota / 100);
+
+  if (salarioBruto > 6263.90) {
+    inssValor = 876.95;
+  }
 
   // Cálculo do IRRF
   salarioBase = salarioBruto - inssValor;
@@ -58,6 +62,10 @@ function calcularSalarioLiquido() {
     salarioLiquido = salarioLiquido - demaisDescontos;
   }
 
+  if (isNaN(demaisDescontos)) {
+    demaisDescontos = 0;
+  }
+
   console.log(demaisDescontos);
 
   document.getElementById("bruto").innerText = "R$ " + salarioBruto.toFixed(2);
@@ -70,10 +78,10 @@ function calcularSalarioLiquido() {
   document.getElementById("total-descontos").innerText = "R$ " + (demaisDescontos + inssValor + irrfValor).toFixed(2);
   document.getElementById("valor-salario-liquido").innerText = "R$ " + salarioLiquido.toFixed(2);
 
-  /*if (inssValor >= 876.95) {
+  if (inssValor >= 876.95) {
     document.getElementById("aliquota-inss").innerText = "TETO";
-    document.getElementById("valor-inss").innerText = "R$ 876.95";
-  }*/
+    //document.getElementById("valor-inss").innerText = "R$ 876.95";
+  }
 
   limparInputs();
 }
