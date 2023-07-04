@@ -14,9 +14,15 @@
             <h1>Cálculo de salário líquido</h1>
             <p class="informativo">Este cálculo demostra como obter um valor de salário líquido a partir do salário bruto e dos principais descontos do salário. Aliquotas (INSS e IRRF) referentes ao ano de 2023.</p>
             <label for="salario-bruto">Salário Bruto:</label>
-            <input type="text" inputmode="numeric" class="salario_bruto" id="salario-bruto">
+            <div class="div_input">
+                <span class="rs">R$ |</span>
+                <input type="text" inputmode="numeric" class="salario_bruto" id="salario-bruto">
+            </div>
             <label for="demais-descontos">Demais Descontos:</label>
-            <input type="text" inputmode="numeric" class="descontos" id="demais-descontos">
+            <div class="div_input">
+                <span class="rs">R$ |</span>
+                <input type="text" inputmode="numeric" class="descontos" id="demais-descontos">
+            </div>
             <label for="numero-dependentes">Número de Dependentes:</label>
             <input type="text" inputmode="numeric" class="dependentes" id="numero-dependentes">
             <div class="botoes">
@@ -31,7 +37,7 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="aa">Eventos</th>
+                        <th>Eventos</th>
                         <th>Alíquota</th>
                         <th>Proventos</th>
                         <th>Descontos</th>

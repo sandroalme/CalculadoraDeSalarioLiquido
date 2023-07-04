@@ -7,12 +7,12 @@
 }
 
 html, body {
+    display: flex;
+    justify-content: center;
     scroll-behavior: smooth;
 }
 
 main {
-    display: flex;
-    justify-content: center;
     gap: 20px;
 }
 
@@ -33,20 +33,37 @@ h1 {
     margin: 50px;
     max-width: 400px;
 }
- input {
-    height: 40px;
+
+.div_input {
     margin: 5px 0px 15px 0px;
+    background-color: rgb(210, 216, 230);
+    border-radius: 5px;
+    max-width: 400px;
+}
+
+input {
+    height: 40px;
+    max-width: 400px;
     border: none;
     border-radius: 5px;
     background-color: rgb(210, 216, 230);
-    padding: 5px;
- }
+    padding-left: 5px;    
+}
+
+.rs {
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+.dependentes {
+    margin-top: 5px;
+}
 
 .botoes {
     display: flex;
     justify-content: center;
     gap: 10px;
-    margin-bottom: 50px;
+    margin: 20px 0px 50px 0px;
 }
 
 .btn_limpar {
